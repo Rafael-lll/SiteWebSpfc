@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo FC - Contato</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>São Paulo Futebol Clube</h1>
+        <p>O Clube da Fé</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Sobre o Clube</a>
+                <div class="dropdown-conteudo">
+                    <a href="historia.html">História</a>
+                    <a href="idolos.html">Ídolos</a>
+                    <a href="titulos.html">Títulos</a>
+                </div>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Entre em Contato</h2>
+            <article>
+                <p>Utilize o formulário abaixo para entrar em contato conosco. Sua opinião é muito importante para nós!</p>
+            </article>
+            <form id="contactForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="critica">Crítica</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+
+                <label for="noticias">
+                    <input type="checkbox" id="noticias" name="noticias" value="sim">
+                    Desejo receber noticias do São Paulo FC
+                </label>
+
+                <div class="form-buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+            <section id="formDataDisplay"></section>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>São Paulo Futebol Clube - Estádio do Morumbi</p>
+            <p>Praça Roberto Gomes Pedrosa, 1 - Morumbi, São Paulo - SP</p>
+            <p>CEP: 18550-000 - Telefone: (11) 3749-8000</p>
+        </address>
+        <p>&copy; 2025 - @rafa.lucasxx - Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
