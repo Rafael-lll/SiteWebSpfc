@@ -220,13 +220,6 @@ aside h3 {
 
 /* Imagens */
 
-.cabeçalho {
-    text-align: left;
-    position: absolute;
-    width: 120px;
-    height: 120px;
-}
-
 figure {
     margin: 1.5rem 0;
     text-align: center;
